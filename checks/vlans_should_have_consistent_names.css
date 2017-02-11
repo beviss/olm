@@ -1,0 +1,23 @@
+td, th {
+  border : 1px solid black;
+  padding-left : 5px;
+  padding-right : 5px;
+}
+
+th {
+  background-color: black;
+  color : white;
+}
+
+table {
+ border-collapse : collapse;
+ border-spacing :0;
+}
+
+.name_from_db {
+  background-color : lightgreen;
+}
+
+.second_header {
+  background-color : lightgray;
+}

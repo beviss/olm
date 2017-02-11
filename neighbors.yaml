@@ -1,0 +1,18 @@
+#- devs: [example-s1, example-c1-s1]
+#  ports: [ae0.0, Trk1]
+#  lag_members:
+#    - [ge-0/0/0, A21]
+#    - [ge-0/0/1, A22]
+
+#                                   OK
+- [[example-s1, example-c1-s1], [ge-1/0/3.0, A21]]
+#                                   OK
+- [[example-s1, example-a9-s1], [ge-1/0/1.0, A24]]
+#                                   OK
+- [[example-s1, example-f5-s1], [ge-6/0/40.0, B5]]
+#                                   OK
+- [[example-s1, example-b7-s1], [ae10.0, Trk1]]
+#                                   OK
+- [[example-s1, example-d8-s1], [ge-5/0/25.0, "48"]]
+#                                    OK
+- [[example-s1, example-d4-s1], [ge-1/0/37.0, A21]]

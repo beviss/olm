@@ -1,0 +1,9 @@
+*.pyc
+*.swp
+*.swo
+/html
+/venv
+config.yaml
+devices.cfg
+/.python-version
+secrets.yaml

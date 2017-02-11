@@ -1,0 +1,15 @@
+Jinja2
+MarkupSafe
+PyYAML
+argparse
+distribute
+ecdsa
+lxml
+ncclient
+paramiko
+pexpect
+pycrypto
+requests
+wsgiref
+xmltodict
+psycopg2

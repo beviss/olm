@@ -1,0 +1,36 @@
+global:
+  ver: 2c
+  community: COMMUNITY
+
+  # list of performed checks, separated with commas (see ./checks dir). Will be executed in this order.
+  checks_enabled: [vlans_should_have_consistent_names]
+  # list of data plugins enabled (see ./data dir)
+  data_enabled: [ifaces, vlans, vpls, vlan_mapping]
+  # are we using cached data? true => data plugins will read results from cache
+  cache_data: false
+  # path to the cache file
+  cache_file: /tmp/snmp-cache.pickle
+
+devices:
+  # devs list of devices' hostnames
+  devs: [device1.example.com, device2.example.com]
+
+  # types <- comma separated list of device types (i.e. hp, juniper, brocade), ordered according to the 'devs' list
+  types: [hp, hp]
+
+  # where to get the devs list from 
+  #   possible values: 
+  #   'config' - use the 'devs' list from this file
+  #   'rancidfile' - read the devices from rancid's router.db
+  #   'file' - use internal file format
+  dev_source: config
+
+  # if dev_source is 'rancidfile', you have to specify the path to the rancid config file here
+  rancidfile: /path/to/router.db
+
+  # if dev_source is 'file', you have to specify the path to the device list file here
+  file: /path/to/devices.yaml
+
+data_plugins:
+  phy_ifaces:
+    none: none
